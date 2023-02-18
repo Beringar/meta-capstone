@@ -1,5 +1,5 @@
 import React from "react";
-import ItalianFood from "../assets/img/food1.jpg";
+import ItalianFoodImage from "../assets/img/food1.jpg";
 
 function Hero() {
   return (
@@ -10,7 +10,7 @@ function Hero() {
         <p>lorem ssdf sdf ljk ljlsd lksj flksjf slkdjf lkjs fdlkjs flkj.</p>
         <button>Reserve a Table</button>
       </div>
-      <img src={ItalianFood} alt="italian food" width="80%" />
+      <img src={ItalianFoodImage} alt="italian food" width="80%" />
     </section>
   );
 }
