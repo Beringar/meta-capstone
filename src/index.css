@@ -47,3 +47,24 @@ code {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.specials-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.4rem;
+}
+
+.special-img {
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.specials-top,
+.special-title-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.special-delivery {
+  display: flex;
+}

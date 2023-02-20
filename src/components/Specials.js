@@ -21,7 +21,7 @@ function Specials() {
           </p>
           <div className="special-delivery">
             <p className="special-order">Order a delivery</p>
-            <icon>moto icon</icon>
+            <figure>moto icon</figure>
           </div>
         </article>
         <article className="dish-card">
@@ -36,7 +36,7 @@ function Specials() {
           </p>
           <div className="special-delivery">
             <p className="special-order">Order a delivery</p>
-            <icon>moto icon</icon>
+            <figure>moto icon</figure>
           </div>
         </article>
         <article className="dish-card">
@@ -51,7 +51,7 @@ function Specials() {
           </p>
           <div className="special-delivery">
             <p className="special-order">Order a delivery</p>
-            <icon>moto icon</icon>
+            <figure>moto icon</figure>
           </div>
         </article>
       </div>
