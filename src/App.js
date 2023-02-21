@@ -1,13 +1,13 @@
 import "./App.css";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="page-container">
       <Header />
-      <Main />
+      <Home />
       <Footer />
     </div>
   );
