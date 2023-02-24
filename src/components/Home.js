@@ -6,12 +6,12 @@ import Testimonials from "./Testimonials";
 
 function Home() {
   return (
-    <main>
+    <>
       <Hero />
       <Specials />
       <Testimonials />
       <BottomHero />
-    </main>
+    </>
   );
 }
 

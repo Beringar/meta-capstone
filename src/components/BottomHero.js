@@ -1,5 +1,5 @@
 import React from "react";
-import ItalianFoodImage from "../assets/img/food1.jpg";
+import ChefsImg from "../assets/img/chefs.jpg";
 
 function BottomHero() {
   return (
@@ -13,7 +13,7 @@ function BottomHero() {
             traditional recipes served with a modern twist.
           </p>
         </div>
-        <img src={ItalianFoodImage} alt="italian food" width="80%" />
+        <img src={ChefsImg} alt="italian food" width="80%" />
       </section>
     </div>
   );

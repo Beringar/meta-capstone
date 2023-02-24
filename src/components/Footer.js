@@ -1,5 +1,7 @@
 import React from "react";
 import LogoFooterImg from "../assets/img/logofooter.png";
+import Nav from "./Nav";
+import SocialsNav from "./SocialsNav";
 
 function Footer() {
   return (
@@ -10,15 +12,17 @@ function Footer() {
         </div>
         <div>
           <h3>Navigation</h3>
-          <p>Home...</p>
+          <Nav />
         </div>
         <div>
           <h3>Contact</h3>
-          <p>Address...</p>
+          <p>Little Italy Square, 23</p>
+          <p>New York</p>
+          <a href="mailto:info@littlelemon.com">info@littlelemon.com</a>
         </div>
         <div>
           <h3>Social Media Links</h3>
-          <p>Facebook...</p>
+          <SocialsNav />
         </div>
       </section>
     </footer>

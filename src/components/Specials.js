@@ -1,5 +1,7 @@
 import React from "react";
 import BruschettaImg from "../assets/img/bruschetta.jpg";
+import LemonImg from "../assets/img/lemon.jpg";
+import GreekImg from "../assets/img/greek.jpg";
 import BikeDeliveryImg from "../assets/img/bike-delivery-icon.png";
 
 function Specials() {
@@ -12,15 +14,16 @@ function Specials() {
         </div>
         <div className="specials-list">
           <article className="dish-card">
-            <img className="special-img" src={BruschettaImg} alt="bruschetta" />
+            <img className="special-img" src={GreekImg} alt="greek salad" />
             <div className="card-description">
               <div className="special-title-price">
-                <h3 className="special-title">Bruschetta</h3>
+                <h3 className="special-title">Greek Salad</h3>
                 <h3 className="special-price">$12.99</h3>
               </div>
               <p className="special-description">
-                Our Bruschetta is made from grilled bread that has been smeared
-                with garlic and seasoned with salt and olive oil.
+                The famous greek salad of crispy lettuce, peppers, olives and
+                our Chicago style feta cheese, garnished with crunchy garlic and
+                rosemary croutons.
               </p>
               <div className="special-delivery">
                 <p className="special-order">Order a delivery</p>
@@ -33,7 +36,7 @@ function Specials() {
             <div className="card-description">
               <div className="special-title-price">
                 <h3 className="special-title">Bruschetta</h3>
-                <h3 className="special-price">$12.99</h3>
+                <h3 className="special-price">$5.99</h3>
               </div>
               <p className="special-description">
                 Our Bruschetta is made from grilled bread that has been smeared
@@ -46,15 +49,16 @@ function Specials() {
             </div>
           </article>
           <article className="dish-card">
-            <img className="special-img" src={BruschettaImg} alt="bruschetta" />
+            <img className="special-img" src={LemonImg} alt="lemon cake" />
             <div className="card-description">
               <div className="special-title-price">
-                <h3 className="special-title">Bruschetta</h3>
-                <h3 className="special-price">$12.99</h3>
+                <h3 className="special-title">Lemon Dessert</h3>
+                <h3 className="special-price">$5.00</h3>
               </div>
               <p className="special-description">
-                Our Bruschetta is made from grilled bread that has been smeared
-                with garlic and seasoned with salt and olive oil.
+                This comes straight from grandma’s recipe book, every last
+                ingredient has been sourced and is as authentic as can be
+                imagined.
               </p>
               <div className="special-delivery">
                 <p className="special-order">Order a delivery</p>
