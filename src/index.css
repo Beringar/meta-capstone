@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&family=Markazi+Text:wght@400;500;600&display=swap");
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -19,8 +18,19 @@ h6 {
   font-weight: 500;
 }
 
+h2.section-title {
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
 .primary-color {
   color: #f4ce14;
+}
+
+.secondary-color {
+  color: #495e57;
 }
 
 .white-color {
@@ -52,9 +62,6 @@ code {
   border: 1px red solid;
   box-sizing: border-box;
 } */
-
-.page-container {
-}
 
 .header-container {
   display: grid;
@@ -113,17 +120,24 @@ section {
 
 .special-img {
   width: 100%;
-  border-radius: 1.2rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .specials-top,
 .special-title-price {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .special-delivery {
   display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.special-delivery img {
+  width: 30px;
 }
 
 .testimonials-list {
@@ -144,4 +158,44 @@ section {
 
 .footer section img {
   width: 100%;
+}
+
+.btn {
+  background-color: #f4ce14;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.dish-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-description {
+  background-color: #eaeaea;
+  padding: 1rem;
+}
+
+h3.special-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+h3.special-price {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  font-weight: 600;
+  color: #ee9972;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+}
+
+.specials-top {
+  margin-bottom: 1rem;
 }

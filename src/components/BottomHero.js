@@ -6,9 +6,12 @@ function BottomHero() {
     <div className="container bottomhero-container">
       <section className="hero-section">
         <div>
-          <h1>Little Lemon</h1>
-          <h3>Chicago</h3>
-          <p>lorem ssdf sdf ljk ljlsd lksj flksjf slkdjf lkjs fdlkjs flkj.</p>
+          <h1 className="secondary-color">Little Lemon</h1>
+          <h2>Chicago</h2>
+          <p>
+            We are a family owned Mediterranean restaurant, focused on
+            traditional recipes served with a modern twist.
+          </p>
         </div>
         <img src={ItalianFoodImage} alt="italian food" width="80%" />
       </section>

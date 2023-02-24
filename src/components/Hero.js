@@ -8,8 +8,11 @@ function Hero() {
         <div>
           <h1 className="primary-color">Little Lemon</h1>
           <h2 className="white-color">Chicago</h2>
-          <p>lorem ssdf sdf ljk ljlsd lksj flksjf slkdjf lkjs fdlkjs flkj.</p>
-          <button>Reserve a Table</button>
+          <p className="white-color">
+            We are a family owned Mediterranean restaurant, focused on
+            traditional recipes served with a modern twist.
+          </p>
+          <button className="btn">Reserve a Table</button>
         </div>
         <img src={ItalianFoodImage} alt="italian food" />
       </section>
