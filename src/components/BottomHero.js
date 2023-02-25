@@ -6,8 +6,8 @@ function BottomHero() {
     <div className="container bottomhero-container">
       <section className="hero-section">
         <div>
-          <h1 className="secondary-color">Little Lemon</h1>
-          <h2>Chicago</h2>
+          <h1 className="display-title secondary-color">Little Lemon</h1>
+          <h2 className="subtitle">Chicago</h2>
           <p>
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.

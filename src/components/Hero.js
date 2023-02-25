@@ -9,8 +9,8 @@ function Hero() {
     <div className="container hero-container">
       <section className="hero-section">
         <div>
-          <h1 className="primary-color">Little Lemon</h1>
-          <h2 className="white-color">Chicago</h2>
+          <h1 className="display-title primary-color">Little Lemon</h1>
+          <h2 className="subtitle white-color">Chicago</h2>
           <p className="white-color">
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
