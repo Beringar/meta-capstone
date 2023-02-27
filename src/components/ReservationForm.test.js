@@ -1,7 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import { AlertProvider } from "../context/alertContext";
 import ReservationForm from "./ReservationForm";
 
 describe("given a ReservationForm component", () => {
@@ -12,12 +11,10 @@ describe("given a ReservationForm component", () => {
       render(
         <BrowserRouter>
           <ChakraProvider>
-            <AlertProvider>
-              <ReservationForm
-                availableBookings={availableBookings}
-                changeDateAction={changeDateAction}
-              />
-            </AlertProvider>
+            <ReservationForm
+              availableBookings={availableBookings}
+              changeDateAction={changeDateAction}
+            />
           </ChakraProvider>
         </BrowserRouter>
       );
@@ -30,12 +27,10 @@ describe("given a ReservationForm component", () => {
       render(
         <BrowserRouter>
           <ChakraProvider>
-            <AlertProvider>
-              <ReservationForm
-                availableBookings={availableBookings}
-                changeDateAction={changeDateAction}
-              />
-            </AlertProvider>
+            <ReservationForm
+              availableBookings={availableBookings}
+              changeDateAction={changeDateAction}
+            />
           </ChakraProvider>
         </BrowserRouter>
       );

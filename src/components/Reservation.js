@@ -24,7 +24,7 @@ function Reservation() {
   );
 
   return (
-    <div className="container">
+    <div className="container reservation-bg">
       <section>
         <ReservationForm
           availableBookings={availableBookings}

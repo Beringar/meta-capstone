@@ -15,18 +15,18 @@ import {
 } from "@chakra-ui/react";
 import * as Yup from "yup";
 import useSubmit from "../hooks/useSubmit";
-import { useAlertContext } from "../context/alertContext";
+import { useNavigate } from "react-router-dom";
 
 const ReservationForm = ({ availableBookings, changeDateAction }) => {
+  const navigate = useNavigate();
   const { isLoading, response, submit } = useSubmit();
-  const { onOpen } = useAlertContext();
 
   const formik = useFormik({
     initialValues: {
-      firstName: "",
+      name: "",
       date: "",
-      dinners: "",
       time: "",
+      dinners: "",
       occasion: "",
       email: "",
       comment: "",
@@ -35,7 +35,7 @@ const ReservationForm = ({ availableBookings, changeDateAction }) => {
       submit("https://littlelemonrestaurant.com/api/reservation/", values);
     },
     validationSchema: Yup.object({
-      firstName: Yup.string().required("Required"),
+      name: Yup.string().required("Required"),
       email: Yup.string().email("Invalid email address").required("Required"),
       date: Yup.date()
         .transform(function (value, originalValue) {
@@ -64,32 +64,29 @@ const ReservationForm = ({ availableBookings, changeDateAction }) => {
 
   useEffect(() => {
     if (response) {
-      onOpen(response.type, response.message);
+      console.log(response.type, response.message);
+      console.log(response.data);
       if (response.type === "success") {
-        formik.resetForm();
+        navigate("/reservation-confirmed", { state: response.data });
       }
     }
-  }, [response]);
+  }, [response, navigate]);
 
   return (
-    <VStack px={12} alignItems="flex-start">
+    <VStack px={[0, 6, 12]} alignItems="flex-start">
       <h1 className="display-title secondary-color">Reserve a Table</h1>
       <Box rounded="md" w="100%">
-        <form onSubmit={formik.handleSubmit}>
+        <form className="form" onSubmit={formik.handleSubmit}>
           <VStack spacing={4}>
             <FormControl
               isRequired
-              isInvalid={!!formik.errors.firstName && formik.touched.firstName}
+              isInvalid={!!formik.errors.name && formik.touched.name}
             >
-              <FormLabel fontWeight={700} htmlFor="firstName">
+              <FormLabel fontWeight={700} htmlFor="name">
                 Name
               </FormLabel>
-              <Input
-                id="firstName"
-                name="firstName"
-                {...formik.getFieldProps("firstName")}
-              />
-              <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
+              <Input id="name" name="name" {...formik.getFieldProps("name")} />
+              <FormErrorMessage>{formik.errors.name}</FormErrorMessage>
             </FormControl>
             <FormControl
               isRequired
@@ -152,22 +149,6 @@ const ReservationForm = ({ availableBookings, changeDateAction }) => {
             </FormControl>
             <FormControl
               isRequired
-              isInvalid={!!formik.errors.email && formik.touched.email}
-            >
-              <FormLabel fontWeight={700} htmlFor="email">
-                Email Address
-              </FormLabel>
-              <Input
-                id="email"
-                name="email"
-                type="email"
-                {...formik.getFieldProps("email")}
-              />
-              <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
-              <FormHelperText>We'll never share your email.</FormHelperText>
-            </FormControl>
-            <FormControl
-              isRequired
               isInvalid={!!formik.errors.occasion && formik.touched.occasion}
             >
               <FormLabel fontWeight={700} htmlFor="occasion">
@@ -183,6 +164,22 @@ const ReservationForm = ({ availableBookings, changeDateAction }) => {
                 <option value="anniversary">Anniversary</option>
               </Select>
               <FormErrorMessage>{formik.errors.occasion}</FormErrorMessage>
+            </FormControl>
+            <FormControl
+              isRequired
+              isInvalid={!!formik.errors.email && formik.touched.email}
+            >
+              <FormLabel fontWeight={700} htmlFor="email">
+                Email Address
+              </FormLabel>
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                {...formik.getFieldProps("email")}
+              />
+              <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
+              <FormHelperText>We'll never share your email.</FormHelperText>
             </FormControl>
             <FormControl
               isInvalid={!!formik.errors.comment && formik.touched.comment}

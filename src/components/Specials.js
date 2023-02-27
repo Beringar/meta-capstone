@@ -56,7 +56,7 @@ function Specials() {
                 <h3 className="special-price">$5.00</h3>
               </div>
               <p className="special-description">
-                This comes straight from grandma’s recipe book, every last
+                This comes straight from grandma's recipe book, every last
                 ingredient has been sourced and is as authentic as can be
                 imagined.
               </p>
