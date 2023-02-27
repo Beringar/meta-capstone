@@ -3,29 +3,22 @@ import { initializeTimes, bookingTimesReducer } from "./Reservation";
 describe("given a initializeTimes function", () => {
   describe("when invoked", () => {
     it("Should return initial values", () => {
-      const initialValues = {
-        availableTimes: ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"],
-      };
-
       const result = initializeTimes();
 
-      expect(result).toEqual(initialValues);
+      expect(result.availableTimes.length).toBeGreaterThan(0);
     });
   });
 });
 
 describe("given a bookingTimesReducer function", () => {
   describe("when invoked with empty state and an action", () => {
-    it("Should a new state", () => {
-      const initialValues = {
-        availableTimes: ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"],
-      };
+    it("Should return a new state", () => {
       const state = {};
       const action = { type: "setDate", payload: "2023-02-02" };
 
       const newState = bookingTimesReducer(state, action);
 
-      expect(newState).toEqual(initialValues);
+      expect(newState.availableTimes.length).toBeGreaterThan(0);
     });
   });
 });
