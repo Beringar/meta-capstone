@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Frontend Meta Capstone (Little Lemon / Reserve a Table)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
