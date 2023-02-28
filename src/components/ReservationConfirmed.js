@@ -5,7 +5,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 function ReservationConfirmed() {
   const { state } = useLocation();
   const navigate = useNavigate();
-  console.log(state);
   return (
     <div className="container reservation-bg">
       <section id="reservation-details">

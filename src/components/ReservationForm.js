@@ -64,8 +64,6 @@ const ReservationForm = ({ availableBookings, changeDateAction }) => {
 
   useEffect(() => {
     if (response) {
-      console.log(response.type, response.message);
-      console.log(response.data);
       if (response.type === "success") {
         navigate("/reservation-confirmed", { state: response.data });
       }
