@@ -1,14 +1,13 @@
 # Frontend Meta Capstone (Little Lemon / Reserve a Table)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instructions:
 
-## Available Scripts
-
-In the project directory, you can run:
-
+In the project directory, you need to run:
+### `npm install`
+to install dependencies
 ### `npm start`
+runs the app in dev mode
 
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
