@@ -71,6 +71,11 @@ code {
   box-sizing: border-box;
 } */
 
+.clickable {
+  pointer-events: all;
+  cursor: pointer;
+}
+
 li a {
   color: #000000;
   font-weight: 500;
@@ -94,8 +99,8 @@ li a:hover {
 }
 
 .nav-container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   max-width: 1000px;
@@ -111,6 +116,10 @@ header .nav-menu > ul {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
+}
+
+footer .nav-menu {
+  display: block !important;
 }
 
 footer .nav-menu > ul {
@@ -213,6 +222,7 @@ section {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
 }
 
 .footer section img {
@@ -297,4 +307,35 @@ footer {
 
 .reservation-bg {
   background-color: #edefee;
+}
+
+.only-mobile {
+  display: none;
+}
+
+.only-desktop {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .only-mobile {
+    display: block;
+  }
+
+  .only-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .hero-section,
+  .specials-list {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
 }

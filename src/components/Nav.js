@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav className="nav-menu">
+    <nav className="nav-menu only-desktop">
       <ul>
         <li>
           <Link to="/">Home</Link>
