@@ -3,10 +3,14 @@
 ## Instructions:
 
 In the project directory, you need to run:
+
 ### `npm install`
+
 to install dependencies
+
 ### `npm start`
-runs the app in dev mode
+
+runs the app in development mode
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
