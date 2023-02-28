@@ -10,15 +10,13 @@
 
   `cd meta-capstone`
 
-- Then, in the project directory (/meta-capstone), you need to run:
+- Then, in the project directory (/meta-capstone), you need to install dependencies:
 
   `npm install`
 
-  to install dependencies, and
+  and, finally, you can run the app in development mode:
 
   `npm start`
-
-  to run the app in development mode
 
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
