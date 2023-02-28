@@ -10,7 +10,9 @@ function Specials() {
       <section id="specials">
         <div className="specials-top">
           <h2 className="section-title">Specials</h2>
-          <button className="btn">Online Menu</button>
+          <button className="btn" aria-label="On click" onClick={() => {}}>
+            Online Menu
+          </button>
         </div>
         <div className="specials-list">
           <article className="dish-card">

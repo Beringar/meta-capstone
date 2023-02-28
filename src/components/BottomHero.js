@@ -13,7 +13,11 @@ function BottomHero() {
             traditional recipes served with a modern twist.
           </p>
         </div>
-        <img src={ChefsImg} alt="italian food" width="80%" />
+        <img
+          src={ChefsImg}
+          alt="chefs of restaurant Little Lemon"
+          width="80%"
+        />
       </section>
     </div>
   );

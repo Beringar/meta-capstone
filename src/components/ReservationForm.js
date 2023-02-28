@@ -205,6 +205,7 @@ const ReservationForm = ({ availableBookings, changeDateAction }) => {
               isLoading={isLoading}
               loadingText="Submitting"
               isDisabled={!(formik.dirty && formik.isValid)}
+              aria-label="Submit"
             >
               Submit Reservation
             </Button>

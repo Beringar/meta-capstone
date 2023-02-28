@@ -17,6 +17,7 @@ function Hero() {
           </p>
           <button
             className="btn"
+            aria-label="On click"
             onClick={() => {
               navigate(`/reservation`);
             }}
